@@ -1,5 +1,6 @@
 #!/usr/bin/python2
 import sys, getopt
+from sys import argv
 
 def parse(filename):
     start='{'
@@ -48,7 +49,6 @@ def main(script_name, argv):
     if not filename:
         print usage_msg
         sys.exit(2)
-    
     
     print 'Input file is ', filename
     ret = parse(filename)
